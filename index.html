@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friend Scheduler</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="addFriendBtn">Add a Friend</button>
+    <div id="friendForm" style="display: none;">
+        <input type="text" id="name" placeholder="Name">
+        <input type="text" id="timezone" placeholder="Timezone">
+        <input type="datetime-local" id="lastInteraction">
+        <input type="datetime-local" id="lastActivity">
+        <textarea id="notes" placeholder="Notes (Optional)"></textarea>
+        <!-- Add more fields for availability as needed -->
+        <button onclick="addFriend()">Submit</button>
+    </div>
+    <ul id="friendList"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
